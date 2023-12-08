@@ -36,9 +36,10 @@ const questions = [
         message: 'What are your guidelines for how to contribute to this project?'
     },
     {
-        type: 'input',
+        type: 'checkbox',
         name: 'license',
-        message: 'Is there a license associated with this project?'
+        message: 'Is there a license associated with this project? Choose one of the following',
+        choices: ['MIT', 'GNU GPL', 'APACHE', 'Mozilla Public License', 'Unilicense', 'None']
     },
     {
         type: 'input',
@@ -47,22 +48,25 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'questions',
-        message: 'How can people contact you about this project?'
+        name: 'github',
+        message: 'If applicable, please enter the Github username associated with this project'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'If applicable, please enter the email that you would like questions about the project to be directed to'
     }
 ];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
 async function init() {
     try {
         const answers = await inquirer.prompt(questions);
-
         console.log(answers);
-        fs.promises.readFile('sample.md', 'utf-8');
-        fs.promises.writeFile('sample.md', JSON.stringify(generateMarkdown(answers)));
+        console.log("One second...")
+        const markdown = generateMarkdown(answers);
+
+        fs.promises.writeFile('sampleREADME.md', markdown, 'utf-8');
         
     } catch (err) {
         console.error(err);
