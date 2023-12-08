@@ -1,10 +1,10 @@
 # Test
 
-  
+  [![Generic badge](https://img.shields.io/badge/License-MIT-purple.svg)]
 
   ## Description
 
-  Its pretty cool
+  Its cool
 
   ## Table of Contents
 
@@ -19,7 +19,7 @@
 
   ## Installation 
 
-  Hit the button
+  Run node index.js
 
   ## Usage
 
@@ -27,14 +27,14 @@
 
   ## Credits 
 
-  undefined
+  None
 
   None
 
   ## License
 
   MIT
-  
+  https://choosealicense.com/licenses/mit/
 
   ## Tests
 
@@ -42,6 +42,8 @@
 
   ## Questions
 
+  Email: 
   
 
-  hansl40721
+  Github:
+  https://github.com/hansl40721

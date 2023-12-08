@@ -1,10 +1,10 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(license = 'None') {
+  if(license[0] == 'None') {
     return "";
   } else {
-    const licenseBadge = license.replace(" ","&ensp;");
+    const licenseBadge = license[0].replace(" ","&ensp;");
     return `[![Generic badge](https://img.shields.io/badge/License-${licenseBadge}-purple.svg)]`
   }
 }
@@ -12,10 +12,10 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(license = "None") {
+  if(license[0] == "None") {
     return "";
   } else {
-    const licenseLink = license.toLowerCase().replace(" ", "-");
+    const licenseLink = license[0].toLowerCase().replace(" ", "-");
     return `https://choosealicense.com/licenses/${licenseLink}/`
   }
 }
@@ -55,13 +55,14 @@ function generateMarkdown(data) {
 
   ## Credits 
 
-  ${data.contributors}
+  ${data.collaborators}
 
   ${data.contributing}
 
   ## License
 
   ${data.license}
+
   ${link}
 
   ## Tests
@@ -69,10 +70,13 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
+  If you have any questions or concerns about this project, reach out using either of the provided methods.
 
+  Email: 
   ${data.email}
 
-  ${data.github}
+  Github:
+  https://github.com/${data.github}
 `;
 }
 
