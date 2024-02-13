@@ -26,21 +26,13 @@
 
   Run node index.js in your terminal and follow the prompts gernerate new README files
 
-  ## Credits 
+  [README Generator Demo.webm](https://github.com/hansl40721/README-generator/assets/123116520/a109299d-0ed2-48e2-85ff-27eec1e73b7f)
 
-  NA
-
-  NA
 
   ## License
 
   None
 
-  
-
-  ## Tests
-
-  NA
 
   ## Questions
   If you have any questions or concerns about this project, reach out using either of the provided methods.
