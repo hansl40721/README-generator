@@ -66,7 +66,7 @@ async function init() {
         console.log("One second...")
         const markdown = generateMarkdown(answers);
 
-        fs.promises.writeFile('sampleREADME.md', markdown, 'utf-8');
+        fs.promises.writeFile('sampleREADME2.md', markdown, 'utf-8');
         
     } catch (err) {
         console.error(err);

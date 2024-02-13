@@ -4,7 +4,7 @@
 
   ## Description
 
-  Its cool
+  This is a test
 
   ## Table of Contents
 
@@ -19,31 +19,33 @@
 
   ## Installation 
 
-  Run node index.js
+  Clone Github repo
 
   ## Usage
 
-  I will do this later
+  Run node index.js in terminal
 
   ## Credits 
 
-  None
+  NA
 
-  None
+  NA
 
   ## License
 
   MIT
+
   https://choosealicense.com/licenses/mit/
 
   ## Tests
 
-  None
+  NA
 
   ## Questions
+  If you have any questions or concerns about this project, reach out using either of the provided methods.
 
   Email: 
-  
+  fakeemail@gmail.com
 
   Github:
   https://github.com/hansl40721
